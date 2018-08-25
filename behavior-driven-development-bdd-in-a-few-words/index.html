@@ -19,14 +19,14 @@
     <meta property="og:site_name" content="Thoughts, stories and ideas on Software CraftmanShip, Devops &amp; Agility.">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Behavior Driven Development (BDD) in a few words">
-    <meta property="og:description" content="BDD (Behavior Driven Development) is primarily a conceptual approach also knows as Specification by Example. It is a Collaboration Technic where all the actors of the team meet together in a meeting called “The 3 Amigos” to design stories related to a feature in the form of acceptance scenarios.    Amigos.">
+    <meta property="og:description" content="In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD). The main idea is very simple indeed, BDD is a Collaboration Technic where all the actors of the team meet together in a meeting called “The 3 Amigos” to">
     <meta property="og:url" content="https://ymedaghri.github.io/behavior-driven-development-bdd-in-a-few-words/">
     <meta property="og:image" content="https://ymedaghri.github.io/content/images/2018/08/rawpixel-250087-unsplash.jpg">
     <meta property="article:published_time" content="2018-07-25T17:53:58.000Z">
-    <meta property="article:modified_time" content="2018-08-23T23:45:16.000Z">
+    <meta property="article:modified_time" content="2018-08-25T00:06:46.000Z">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Behavior Driven Development (BDD) in a few words">
-    <meta name="twitter:description" content="BDD (Behavior Driven Development) is primarily a conceptual approach also knows as Specification by Example. It is a Collaboration Technic where all the actors of the team meet together in a meeting called “The 3 Amigos” to design stories related to a feature in the form of acceptance scenarios.    Amigos.">
+    <meta name="twitter:description" content="In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD). The main idea is very simple indeed, BDD is a Collaboration Technic where all the actors of the team meet together in a meeting called “The 3 Amigos” to">
     <meta name="twitter:url" content="https://ymedaghri.github.io/behavior-driven-development-bdd-in-a-few-words/">
     <meta name="twitter:image" content="https://ymedaghri.github.io/content/images/2018/08/rawpixel-250087-unsplash.jpg">
     <meta name="twitter:label1" content="Written by">
@@ -57,14 +57,14 @@
     "headline": "Behavior Driven Development (BDD) in a few words",
     "url": "https://ymedaghri.github.io/behavior-driven-development-bdd-in-a-few-words/",
     "datePublished": "2018-07-25T17:53:58.000Z",
-    "dateModified": "2018-08-23T23:45:16.000Z",
+    "dateModified": "2018-08-25T00:06:46.000Z",
     "image": {
         "@type": "ImageObject",
         "url": "https://ymedaghri.github.io/content/images/2018/08/rawpixel-250087-unsplash.jpg",
         "width": 5868,
         "height": 4004
     },
-    "description": "BDD (Behavior Driven Development) is primarily a conceptual approach also knows as Specification by Example. It is a Collaboration Technic where all the actors of the team meet together in a meeting called “The 3 Amigos” to design stories related to a feature in the form of acceptance scenarios.    Amigos.",
+    "description": "In this article (which is my first one by the way 😜) I&#x27;m going to present you the Behavior Driven Development (BDD). The main idea is very simple indeed, BDD is a Collaboration Technic where all the actors of the team meet together in a meeting called “The 3 Amigos” to",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ymedaghri.github.io/"
@@ -81,6 +81,7 @@ ghost.init({
 </script>
     <meta name="generator" content="Ghost 1.25">
     <link rel="alternate" type="application/rss+xml" title="Thoughts, stories and ideas on Software CraftmanShip, Devops &amp; Agility." href="../rss/index.rss">
+    <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
 
 </head>
 <body class="post-template">
@@ -127,24 +128,46 @@ ghost.init({
 
             <section class="post-full-content">
                 <div class="post-content">
-                    <div class="kg-card-markdown"><p>BDD (Behavior Driven Development) is primarily a conceptual approach also knows as <strong>Specification by Example</strong>.<br>
-It is a <strong>Collaboration Technic</strong> where all the actors of the team meet together in a meeting called <strong>“The 3 Amigos”</strong> to design stories related to a feature in the form of acceptance scenarios.</p>
-<div class="cinta dos">
-  <img src="../content/images/2017/08/3-amigos-mario-luigi-yoschi.png">
-</div>
-<br>
-<h1 id="amigos">Amigos...</h1>
-<p>The name <strong>3 Amigos</strong> refers to the fact that the 3 parts that constitutes the Team (Developers, Testers, PO &amp; BusinessAnalysts) are working together collaboratively during this meeting.<br>
-During the <strong>“The 3 Amigos”</strong> meeting, conversations take place between the business analyst (or PO), the developer, and the tester.<br>
-Doing so, they elaborate the requirements together.</p>
-<h1 id="thegoldenruleofbdd">The Golden rule of BDD</h1>
+                    <div class="kg-card-markdown"><p>In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD).<br>
+<br>The main idea is very simple indeed, BDD is a <strong>Collaboration Technic</strong> where all the actors of the team meet together in a meeting called <strong>“The 3 Amigos”</strong> to design <strong>stories</strong> related to a feature in the form of <strong>acceptance scenarios</strong>.</p>
+<img src="../content/images/2017/08/3-amigos-mario-luigi-yoschi.png">
+<h1 id="somecontext">Some context</h1>
+<p>Imaging you are working for a company that is developing some kind of software.<br>
+You are a highly skilled developer and you also play the scrum master role within a team that is composed of :</p>
+<ul>
+<li>1 or 2 Quality Analysts (QA or "Testers")</li>
+<li>3 or 4 Developers (including you)</li>
+<li>1 Product Owner (PO)</li>
+</ul>
+<p>At this point there is something important that you should take in account :</p>
 <blockquote>
-<p>Having conversations<br>
-Is more important than capturing conversations<br>
-Is more important than automating conversations</p>
+<p>The three types of actors we just described (DEVs/QAs/POs) have each different objectives that are often conflicting.</p>
 </blockquote>
+<h1 id="conflictingobjectives">Conflicting Objectives</h1>
+<p>The PO is <strong>Business Value Focused</strong>.<br>
+He needs to bring <strong>value into the product</strong>, this is the most important goal he needs to achieve, and it is not a simple one.<br>
+For that he needs to gather client feedbacks and requirements (during long meetings), prioritize them, and include the relevant ones into the Software's Roadmap.<br>
+Then he needs to write <strong>epics</strong> and <strong>stories</strong> to describe these requirements to both the <strong>Devs</strong> and the <strong>QAs</strong></p>
+<p>Finally he needs to <strong>double check</strong> <i class="em em-man-facepalming"></i> <strong>all the stories</strong> even if these were already tested and checked by the <strong>Devs</strong> then by the <strong>QAs</strong>, because the requirements he described may not have been <strong>correctly understood</strong>.</p>
+<p>On the other hand the QA is <strong>Quality Focused</strong>.<br>
+He needs to ensure the product quality is always at its best.<br>
+Doing so he may be too picky on some aspects that are considered low-priority by the DEV or by the PO.</p>
+<p>Finally the DEV is <strong>Solution Focused</strong>.<br>
+He need to implement the requirement while keeping the software well organised using technical refactorings and TDD approach.<br>
+He has the more precise knowledge of how features are implemented into the software and will often found corner cases that will be missing in the stories.</p>
+<h3 id="manyconflictscanoccurduetoeachactorfocus">Many conflicts can occur due to each actor focus :</h3>
+<ul>
+<li>QA is testing non relevant things and omitting very important use cases that have a lot of product value) --&gt; PO is MAD ! <i class="em em-angry"></i></li>
+<li>QA or DEV find many missing information into the <strong>stories</strong> so they overwhelm the PO with questions</li>
+<li>DEV and QA do not have the same understanding of the story, and try to knock each other out using their keyboards <i class="em em-boom"></i></li>
+<li>And so on ......</li>
+</ul>
+<h1 id="amigos">Amigos...</h1>
+<p>The name <strong>3 Amigos</strong> refers to the fact that the 3 parts that constitutes the Team (Developers, Testers, PO &amp; BusinessAnalysts) need to work together collaboratively during specific meetings dedicated to this collaboration.<br>
+During these <strong>“The 3 Amigos”</strong> meeting, conversations take place between the business analyst (or PO), the developer, and the tester.<br>
+Doing so, they elaborate the <strong>requirements</strong> and the <strong>acceptance criterias</strong> together.</p>
 <p>At the end of the <strong>3 Amigos</strong> meeting the team has a set of <strong>acceptance criteria</strong>, but <strong>the most important aspect of this approach</strong> is that at this point they have <strong>the same understanding</strong> of all the requirements they have been discussing about.</p>
-<h1 id="bddisasynthesisandrefinementoftddatdd">BDD is a synthesis and refinement of TDD &amp; ATDD</h1>
+<h1 id="sharedunderstandingacceptancecriterias">Shared Understanding / Acceptance Criterias</h1>
 <p>The output of the <strong>3 Amigos</strong> meeting is a set of <strong>acceptance scenarios</strong> corresponding to the requirements that contributes directly to precise business outcomes.</p>
 <p>These acceptance scenarios will guide implementing the described requirements such as in the TDD approach (Test Driven Development)</p>
 <p>The acceptance scenarios describes behaviors in a single notation directly accessible to any role in the Team (Given/When/Then Canvas).<br>
@@ -155,13 +178,11 @@ As a store owner
 In order to keep track of stock
 I want to add items back to stock when they're returned.
 
-
 Scenario 1: Refunded items should be returned to stock
 Given that a customer previously bought a black sweater from me
 And I have three black sweaters in stock.
 When he returns the black sweater for a refund
 Then I should have four black sweaters in stock.
-
 
 Scenario 2: Replaced items should be returned to stock
 Given that a customer previously bought a blue garment from me
@@ -171,8 +192,16 @@ When he returns the blue garment for a replacement in black
 Then I should have three blue garments in stock
 And two black garments in stock.
 </code></pre>
-<p><a href="https://docs.google.com/presentation/d/1YfKNOYakp-oUfef3w-0CuGwaF4GZXZB4XuqD8V0BElM/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g35f391192_00">Want to know more, check the slides of a presentation I made on BDD ...</a></p>
-<h1 id="andsomegreatressourcesonbdd">And some great ressources on BDD</h1>
+<h1 id="tryityourself">Try it yourself</h1>
+<p>At this point you should have a pretty good understanding of the BDD conceptual approach.</p>
+<h2 id="thegoldenruleofbdd">The Golden rule of BDD</h2>
+<blockquote>
+<p>Having conversations<br>
+Is more important than capturing conversations<br>
+Is more important than automating conversations</p>
+</blockquote>
+<p>If you want to put that in place you can view some very good presentations on BDD at the end of this article.<br>
+You can also check the <a href="https://docs.google.com/presentation/d/1YfKNOYakp-oUfef3w-0CuGwaF4GZXZB4XuqD8V0BElM/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g35f391192_00">slides</a> of a presentation I made on BDD as a scrum master at my company.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MCaXumfckmQ" frameborder="0" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kTLF2G1djZw" frameborder="0" allowfullscreen></iframe>
 </div>
