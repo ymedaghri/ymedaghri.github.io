@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="//purl.org/dc/elements/1.1/" xmlns:content="//purl.org/rss/1.0/modules/content/" xmlns:atom="//www.w3.org/2005/Atom" version="2.0" xmlns:media="//search.yahoo.com/mrss/"><channel><title><![CDATA[Thoughts, stories and ideas on Software CraftmanShip, Devops & Agility.]]></title><description><![CDATA[Agile, BDD, Agility, Devops, Java, TDD, DDD, Programming]]></description><link>https://ymedaghri.github.io/ghost/</link><image><url>https://ymedaghri.github.io/ghost/favicon.png</url><title>Thoughts, stories and ideas on Software CraftmanShip, Devops &amp; Agility.</title><link>https://ymedaghri.github.io/ghost/</link></image><generator>Ghost 1.25</generator><lastBuildDate>Sat, 25 Aug 2018 00:35:07 GMT</lastBuildDate><atom:link href="https://ymedaghri.github.io/ghost/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Behavior Driven Development (BDD) in a few words]]></title><description><![CDATA[<div class="kg-card-markdown"><p>In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD).<br>
-<br>The main idea is very simple indeed, BDD is a <strong>Collaboration Technic</strong> where all the actors of the team meet together in a meeting called <strong>“The 3 Amigos”</strong> to</p></div>]]></description><link>https://ymedaghri.github.io/ghost/behavior-driven-development-bdd-in-a-few-words/</link><guid isPermaLink="false">5b58b92441514aa750b8ae0d</guid><dc:creator><![CDATA[Youssef MEDAGHRI-ALAOUI]]></dc:creator><pubDate>Wed, 25 Jul 2018 17:53:58 GMT</pubDate><media:content url="https://ymedaghri.github.io/ghost/content/images/2018/08/rawpixel-250087-unsplash.jpg" medium="image"/><content:encoded><![CDATA[<div class="kg-card-markdown"><img src="https://ymedaghri.github.io/ghost/content/images/2018/08/rawpixel-250087-unsplash.jpg" alt="Behavior Driven Development (BDD) in a few words"><p>In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD).<br>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="//purl.org/dc/elements/1.1/" xmlns:content="//purl.org/rss/1.0/modules/content/" xmlns:atom="//www.w3.org/2005/Atom" version="2.0" xmlns:media="//search.yahoo.com/mrss/"><channel><title><![CDATA[Thoughts, stories and ideas on Software CraftmanShip, Devops & Agility.]]></title><description><![CDATA[Agile, BDD, Agility, Devops, Java, TDD, DDD, Programming]]></description><link>https://ymedaghri.github.io/</link><image><url>https://ymedaghri.github.io/favicon.png</url><title>Thoughts, stories and ideas on Software CraftmanShip, Devops &amp; Agility.</title><link>https://ymedaghri.github.io/</link></image><generator>Ghost 1.25</generator><lastBuildDate>Sat, 25 Aug 2018 08:51:20 GMT</lastBuildDate><atom:link href="https://ymedaghri.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Behavior Driven Development (BDD) in a few words]]></title><description><![CDATA[<div class="kg-card-markdown"><p>In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD).<br>
+<br>The main idea is very simple indeed, BDD is a <strong>Collaboration Technic</strong> where all the actors of the team meet together in a meeting called <strong>“The 3 Amigos”</strong> to</p></div>]]></description><link>https://ymedaghri.github.io/behavior-driven-development-bdd-in-a-few-words/</link><guid isPermaLink="false">5b58b92441514aa750b8ae0d</guid><dc:creator><![CDATA[Youssef MEDAGHRI-ALAOUI]]></dc:creator><pubDate>Wed, 25 Jul 2018 17:53:58 GMT</pubDate><media:content url="https://ymedaghri.github.io/content/images/2018/08/rawpixel-250087-unsplash.jpg" medium="image"/><content:encoded><![CDATA[<div class="kg-card-markdown"><img src="https://ymedaghri.github.io/content/images/2018/08/rawpixel-250087-unsplash.jpg" alt="Behavior Driven Development (BDD) in a few words"><p>In this article (which is my first one by the way 😜) I'm going to present you the Behavior Driven Development (BDD).<br>
 <br>The main idea is very simple indeed, BDD is a <strong>Collaboration Technic</strong> where all the actors of the team meet together in a meeting called <strong>“The 3 Amigos”</strong> to design <strong>stories</strong> related to a feature in the form of <strong>acceptance scenarios</strong>.</p>
-<img src="https://ymedaghri.github.io/ghost/content/images/2017/08/3-amigos-mario-luigi-yoschi.png" alt="Behavior Driven Development (BDD) in a few words">
+<img src="https://ymedaghri.github.io/content/images/2017/08/3-amigos-mario-luigi-yoschi.png" alt="Behavior Driven Development (BDD) in a few words">
 <h1 id="somecontext">Some context</h1>
-<p>Imaging you are working for a company that is developing some kind of software.<br>
+<p>Imagine you are working for a company that is developing some kind of software.<br>
 You are a highly skilled developer and you also play the scrum master role within a team that is composed of :</p>
 <ul>
 <li>1 or 2 Quality Analysts (QA or &quot;Testers&quot;)</li>
 <li>3 or 4 Developers (including you)</li>
 <li>1 Product Owner (PO)</li>
 </ul>
-<p>At this point there is something important that you should take in account :</p>
+<p>At this point there is something really important that you should take in account :</p>
 <blockquote>
 <p>The three types of actors we just described (DEVs/QAs/POs) have each different objectives that are often conflicting.</p>
 </blockquote>
@@ -44,24 +44,27 @@ Doing so, they elaborate the <strong>requirements</strong> and the <strong>accep
 <p>The acceptance scenarios describes behaviors in a single notation directly accessible to any role in the Team (Given/When/Then Canvas).<br>
 These are very well suited to work in relation with <strong>Cucumber</strong> automation testing tool.</p>
 <h2 id="belowisanexampleofaverysimpleacceptancescenario">Below is an example of a very simple acceptance scenario :</h2>
-<pre><code>Story: Returns go to stock
+<pre><code class="language-rest">Story: Returns go to stock
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 As a store owner
 In order to keep track of stock
 I want to add items back to stock when they're returned.
 
 Scenario 1: Refunded items should be returned to stock
-Given that a customer previously bought a black sweater from me
-And I have three black sweaters in stock.
-When he returns the black sweater for a refund
-Then I should have four black sweaters in stock.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    **Given** that a customer previously bought a black sweater from me
+    **And** I have three black sweaters in stock.
+    **When** he returns the black sweater for a refund
+    **Then** I should have four black sweaters in stock.
 
 Scenario 2: Replaced items should be returned to stock
-Given that a customer previously bought a blue garment from me
-And I have two blue garments in stock
-And three black garments in stock.
-When he returns the blue garment for a replacement in black
-Then I should have three blue garments in stock
-And two black garments in stock.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    **Given** that a customer previously bought a blue garment from me
+    **And** I have two blue garments in stock
+    **And** three black garments in stock.
+    **When** he returns the blue garment for a replacement in black
+    **Then** I should have three blue garments in stock
+    **And** two black garments in stock.
 </code></pre>
 <h1 id="tryityourself">Try it yourself</h1>
 <p>At this point you should have a pretty good understanding of the BDD conceptual approach.</p>
